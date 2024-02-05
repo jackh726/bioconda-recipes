@@ -1,13 +1,12 @@
 {% set version = "0.1.0" %}
-{% set sha256 = "....." %}
 
 package:
   name: pybigtools
   version: {{ version }}
 
 source:
-  url: https://github.com/jack726/bigtools/refs/tags/pybigtools@v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/jackh726/bigtools/archive/refs/tags/pybigtools@v{{ version }}.tar.gz
+  sha256: "bb1a1f1d1f39ce0b73eafb40e291b1ded26fbb283898371ade3414c008b80cdf"
 
 build:
   number: 0
@@ -29,7 +28,7 @@ test:
     - pybigtools
 
 about:
-  home: https://github.com/jack726/bigtools/
+  home: https://github.com/jackh726/bigtools/
   license: MIT License
   summary: 'pybigtools: Python bindings to the Bigtools Rust library for high-performance BigWig and BigBed I/O'
   license_family: MIT

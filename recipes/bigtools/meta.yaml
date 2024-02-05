@@ -1,5 +1,4 @@
 {% set version = "0.4.1" %}
-{% set sha256 = "....." %}
 
 package:
   name: bigtools
@@ -11,8 +10,8 @@ build:
     - {{ pin_subpackage('bigtools', max_pin="x.x") }}
 
 source:
-  url: https://github.com/jack726/bigtools/refs/tags/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/jackh726/bigtools/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: "92b9ea165adb1f9b13222d6c78e12148d9ba04a0d6ae96001820d43d9af7b39e"
 
 requirements:
   build:
@@ -24,7 +23,7 @@ test:
     - bigtools --help | grep Usage
 
 about:
-  home: https://github.com/jack726/bigtools/
+  home: https://github.com/jackh726/bigtools/
   license: MIT
   doc_url: https://docs.rs/bigtools/latest/bigtools/
   summary: 'Bigtools provides a high-level, performant API for reading and writing bigWig and bigBed files.'
