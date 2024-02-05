@@ -6,5 +6,5 @@ set -ex
 export CARGO_NET_GIT_FETCH_WITH_CLI=true CARGO_HOME="${BUILD_PREFIX}/.cargo"
 export RUST_BACKTRACE=full
 
-cargo install --verbose --path . --root $PREFIX --locked
+cargo install --verbose --path ./bigtools --root $PREFIX --locked
 
