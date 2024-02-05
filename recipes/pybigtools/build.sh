@@ -14,4 +14,4 @@ fi
 maturin build -m pybigtools/Cargo.toml --interpreter $PYTHON --release
 
 # Install *.whl files using pip
-$PYTHON -m pip install target/wheels/*.whl --no-deps --ignore-instialled -vv
+$PYTHON -m pip install target/wheels/*.whl --no-deps --ignore-installed -vv
